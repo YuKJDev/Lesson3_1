@@ -44,7 +44,7 @@ class Box<T extends Fruit> {
         return this.getWeight() == box.getWeight();
     }
 
-    public void transfer(Box<? super T> box) {
+    public void transfer(Box<? super T> box) { //разобрался
         box.fruits.addAll(fruits);
         clear();
 
