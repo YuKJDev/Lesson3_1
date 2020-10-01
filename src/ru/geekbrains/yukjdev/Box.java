@@ -44,7 +44,7 @@ class Box<T extends Fruit> {
         return this.getWeight() == box.getWeight();
     }
 
-    public void transfer(Box<? super T> box) { //Как сделать так чтобы не помещались в одну коробку яблоки и апельсины?
+    public void transfer(Box<? super T> box) {
         box.fruits.addAll(fruits);
         clear();
 

@@ -66,7 +66,7 @@ public class Main  {
 
         Box<Apple> box1 = new Box<>();
         Box<Orange> box2 = new Box<>();
-        Box<Fruit> box3 = new Box<>();
+        Box<Orange> box3 = new Box<>();
 
         box1.add(apple1);
         box1.add(apple2);
@@ -85,7 +85,7 @@ public class Main  {
         System.out.println(box2.getWeight());
 
         box2.transfer(box3);
-        box1.transfer(box3);
+
         System.out.println(box3.getFruits());
     }
 
